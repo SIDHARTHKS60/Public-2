@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+ <display-name>Servlet1</display-name>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>FirstServlet</servlet-name>
+  <servlet-class>demo.FirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>FirstServlet</servlet-name>
+  <url-pattern>/First</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>LoginServlet</servlet-name>
+  <servlet-class>demo.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>LoginServlet</servlet-name>
+  <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>ViewServlet</servlet-name>
+  <servlet-class>demo.ViewServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ViewServlet</servlet-name>
+  <url-pattern>/View Patient</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>DownloadServlet</servlet-name>
+  <servlet-class>demo.DownloadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>DownloadServlet</servlet-name>
+  <url-pattern>/Download</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>RefreshServlet</servlet-name>
+  <servlet-class>demo.RefreshServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>RefreshServlet</servlet-name>
+  <url-pattern>/Refresh</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Info</servlet-name>
+   <servlet-class>demo.DisplayInfo</servlet-class>
+   <init-param>
+   <param-name>name</param-name>
+   <param-value>cdac</param-value>
+   </init-param>
+   <init-param>
+   <param-name>email</param-name>
+   <param-value>cdac@gmail.com</param-value>
+   </init-param>
+   </servlet>
+   <servlet-mapping>
+   <servlet-name>Info</servlet-name>
+    <url-pattern>/Display</url-pattern>
+   </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>SearchServlet</servlet-name>
+   <servlet-class>demo.SearchServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   <servlet-name>SearchServlet</servlet-name>
+    <url-pattern>/Search</url-pattern>
+   </servlet-mapping>
+     
+  <servlet>
+  <servlet-name>ProfileServlet</servlet-name>
+  <servlet-class>demo.ProfileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ProfileServlet</servlet-name>
+  <url-pattern>/Profile</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+   <servlet-name>LogoutServlet</servlet-name>
+   <servlet-class>demo.LogoutServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   <servlet-name>LogoutServlet</servlet-name>
+   <url-pattern>/Logout</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+   <servlet-name>WelcomeServlet</servlet-name>
+   <servlet-class>demo.WelcomeServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   <servlet-name>WelcomeServlet</servlet-name>
+   <url-pattern>/Welcome</url-pattern>
+   </servlet-mapping>
+   
+</web-app>
